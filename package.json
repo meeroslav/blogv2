@@ -8,6 +8,15 @@
     "test": "nx test"
   },
   "private": true,
+  "workspaces": {
+    "packages": [
+      "apps/**"
+    ],
+    "nohoist": [
+      "**/miro",
+      "**/miro/**"
+    ]
+  },
   "dependencies": {},
   "devDependencies": {
     "@nrwl/cli": "13.4.0",

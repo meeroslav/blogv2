@@ -2,7 +2,15 @@
   "version": 2,
   "projects": {
     "miro": {
-      "root": "apps/miro"
+      "root": "apps/miro",
+      "targets": {
+        "serve": {
+          "executor": "@nrwl/workspace:run-script",
+          "options": {
+            "script": "remix dev"
+          }
+        }
+      }
     }
   }
 }
